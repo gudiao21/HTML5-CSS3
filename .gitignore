@@ -1,4 +1,11 @@
+# Ignorar arquivos de vídeo pesados
 *.mp4
 *.ogv
 *.webm
 *.avi
+*.mov
+*.mkv
+
+# Ignorar pastas de sistema/IDE (opcional, mas recomendado)
+.DS_Store
+.vscode/
