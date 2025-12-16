@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 400px;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif
+    }
+    
+    td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr> <!-- Primeira Linha -->
+      <td colspan="4">A</td>
+      <td rowspan="4">B</td>
+    </tr>
+    <tr> <!-- Segunda Linha -->
+      <td rowspan="4">C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+      <!-- Ocupado pela expanção de "B" -->
+    </tr>
+    <tr><!-- Terceira Linha -->
+      <!-- Ocupado pela expanção de "C" -->
+      <td>G</td>
+      <td>H</td>
+      <td>I</td>
+      <!-- Ocupado pela expanção do "B" -->
+    </tr>
+    <tr> <!-- Quarta Linha -->
+      <!-- ocupado pela expanção do "C" -->
+      <td>J</td>
+      <td>L</td>
+      <td>M</td>
+      <!-- Ocupado pela expansão do "B" -->
+    </tr>
+    <tr> <!-- Quinta Linha -->
+      <!-- Ocupado pela extensão do "C" -->
+      <td colspan="4">N</td>
+    </tr>
+  </table>
+</body>
+</html>

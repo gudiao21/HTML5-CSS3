@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Centralizado</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Tela de Login</h1>
+      <style>
+        * { /* "Aplique margin: 0, padding: 0 e box-sizing: border-box a todos os elementos HTML, sem exceção." */
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+
+        body { /* pai */
+          background-color: lightsalmon;
+        }
+
+        main { /* filho */
+          background-color: lightgreen;
+          height: 100vh; /* Altura 100% da tela. 'h' de 'height'. */
+          width: 100vw; /* largura 100% da tela 'w' de 'width */
+
+          display: flex; /*  */
+          flex-flow: row nowrap;
+          justify-content: center; /*  */
+          align-items: center; /*  */
+        }
+
+        section {
+          background-color: lightseagreen;
+          height: 200px;
+          width: 200px;
+        }
+      </style>
+    </section>
+  </main>
+</body>
+</html>

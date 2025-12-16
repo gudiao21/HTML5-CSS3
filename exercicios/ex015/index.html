@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos Externos</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS externo (É o geralzão, não sobresaindo sobre nenhum das duas outras técnicas do CSS. Esta técnica pode-se e recomenda-se usar sem moderação)-->
+  <style> /* CSS interno (sobresai sobre o CSS externo apenas). Recomendado se por para estilos pequenos. Crescendo muito, a recomendação muda para externo */
+    h1 {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Capítulo 1</h1>
+  <h2>Capítulo 1.1</h2>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo mollitia doloribus odio fuga deleniti, quasi, quibusdam fugiat aut error minima porro. Temporibus alias odio placeat impedit optio dolores minima suscipit?
+  </p>
+  <h2>Capítulo 1.2</h2>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur repudiandae aperiam nulla eveniet, cum iure dolore blanditiis deserunt excepturi vero corrupti fugit dolores nesciunt veritatis! Deserunt vitae alias voluptates doloremque.
+  </p>
+  <h1>Capítulo 2</h1>
+  <h2>Capítulo 2.1</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nemo, laudantium dolorem dolorum voluptates doloremque eaque ipsa fugit adipisci temporibus omnis qui quo consectetur eligendi excepturi eos, fugiat minus error.
+  </p>
+  <p style="text-align: right;"><a href="pagina02.html" target="_self">Ir para a página 2</a></p> <!-- CSS inline (Prevalece entre CSS externo e interno) -->
+</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* { /* 'Reset' do CSS, pois o '*' éo sletor universal. Ele seleciona todos os elementos da página, sem exceção (div, p, h1, ul, li, body, etc.). Remover inconsistências entre navegadores (que aplicam estilos padrões diferentes). */
+  margin: 0px; /*Zera todas as margens externas dos elementos. Ex: Por padrão, o <body> e <h1> têm margem - isso remove esse espaço. */
+  padding: 0px; /* Zera os preenchimentos internos(o espaço entre o conteúdo e a borda do elemento) */
+  box-sizing: border-box; /* Com box-sizing: border-box, o valor definido de width passa a incluir padding e border. */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  line-height: 1.2em;
+  text-align: left;
+}
+
+header, section.normal { /* o '.' se refere à classe */
+  padding: 20px;
+}
+
+section.flex-content { /* O "." significa 'classe'. Aqui são característica do pai, ou seja, se referiria ao conteiner com dois artigos (articles)*/
+  padding: 20px;
+  background-color: rgb(156, 156, 156);
+  
+  display: flex;
+  flex-flow: column nowrap; /* 'flex-flow' é uma abreviação de 'flex-direction' e 'flex-wrap'.'column' define o eixo principal, que no caso é 'column'. 'flex-wrap' defie se os elementos podem quebrar linha caso não caiban no container. 'flex-wrap' significa Não permitir quebra de linha, ou seja, os itens vão tentar se manter todos na mesma coluna, mesmo que ultrapasse a altura do container. */  
+}
+
+article.text-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+article.media-text {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+}
+
+article > div.text {
+  flex: 1 1  500px;
+}
+
+article > div.media {
+  flex: 1 0 400px;
+}
+
+div.media > img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+}
+
+div.media > iframe {
+  display: block;
+  margin: auto;
+  width: 90%;
+}

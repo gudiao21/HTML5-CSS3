@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatação de Textos</title>
+  <style>
+    mark { /* Cria um seletor para 'mark' */
+      background-color: limegreen; /* Só tem efeito para esta página */
+    }
+  </style>
+</head>
+<body>
+  <h1>Principais formatações</h1>
+  <h2>Negrito ou Destaque</h2>
+  <p>Nesta frase temos um <b> termo em negrito</b> usando a tag &lt;b&gt;, que é uma tag não semântica e sim de forma</p>
+  <p>Nesta frase, tenho um <strong> termo em destaque</strong> usando a tag STRONG (semântica).</p>
+  <h2>Itálico ou Ênfase</h2>
+  <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+  <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica). É possível juntar as tags 'strong' e 'em' para atuar em um mesmo texto!</p>
+  <h2>Texto marcado</h2>
+  <p>Podemos criar também <mark> um texto marcado</mark> usando a tag &lt;mark&gt;</p>
+  <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+  <h2>Texto grande e pequeno</h2>
+  <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+  <h2>Texto deletado</h2>
+  <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+  <h2></h2>
+  <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+  <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica - é para o CSS)</p>
+  <h2>Texto sobrescrito</h2>
+  <p class="destaque"></p>>Para inserir coisas do tipo x<sup>20</sup> + 3 (tag semântica).</p>
+  <h2>Texto subscrito</h2>
+  <p>Para inserir coisas do tipo H<sub>2</sub>O (tag semântica).</p>
+  <h1>Exemplo de código em Python</h1>
+  <pre><code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+      print(f'O número {num} é par')
+    else:
+      print(f'O número {num} é ímpar')
+    print('FIM DO PROGRAMA')
+  </code></pre>
+  
+  <blockquote cite="https://www.martinsfontespaulista.com.br/php-a-biblia-53304.aspx/p">
+    O PHP é uma linguagem para a criação de scripts para a Web do lado servidor embutidos em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores Web (especialemnte Apache).
+  </blockquote>
+
+  <p>Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> para criar sites.</p>
+  <h2>Texto Invertido</h2>
+  <bdo dir="rtl">Este texto todo está invertido no formato RIGHT-TO-LEFT.</bdo>
+</body>
+</html>
