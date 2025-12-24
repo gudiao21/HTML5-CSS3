@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Exemplo de Formulário</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+      <legend>Sexo</legend>
+      <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label><br>
+      <input type="radio" name="sexo" id="isxfem" value="F" checked><label for="isxfem">Feminino</label> <!-- "checked" é em apenas um deles -->
+    </fieldset> <!-- No botão de "radios" todos os atributos "name" terão que ser iguais -->
+    <fieldset>
+      <legend>Esportes Favoritos</legend><!-- No "checkbox" aceita mais de um argumento "checked" -->
+      <input type="checkbox" name="esfut" id="iesfut" value="futebol" checked> <label for="iesfut">Futebol</label><br> <!-- br = break row -->
+      <input type="checkbox" name="esbas" id="iesbas" value="basquete"> <label for="iesbas">Basquete</label><br> <!-- br = break row -->
+      <input type="checkbox" name="esnat" id="iesnat" value="natacao"> <label for="iesnat">Natação</label><br> <!-- br = break row -->
+      <input type="checkbox" name="esten" id="iesten" value="tenis"> <label for="iesten">Tênis</label><br> <!-- br = break row -->
+    </fieldset>
+ <p>
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpar">
+ </p>
+  </form>
+</body>
+</html>
