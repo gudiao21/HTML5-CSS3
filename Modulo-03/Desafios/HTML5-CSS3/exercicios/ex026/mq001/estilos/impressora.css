@@ -8,7 +8,19 @@
 }
 
 html {
-  font-family: 'Courier New', Courier, monospace; /* fonte monoespaçada e com serifa */
+  font-family: 'Courier New', Courier, monospace; /* fonte monoespaçada e com serifa, que são muito fáceis de se ler no papel impresso. */
   font-size: 1.5em;
   line-height: 1.5em; /* Espaçamento entre linhas */
+}
+
+menu {
+  display: none;
+}
+
+article {
+  width: 100%;
+}
+
+article::after { /* Escrever depois do artigo o respectivo conteúdo abaixo */
+  content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
 }
