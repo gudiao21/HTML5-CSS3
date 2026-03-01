@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    div.conteiner {
+      background-color: lightsalmon;
+      height: 300px; /* Tenho que aumentar a altura para aplicar o "aligh-items" (relativo ao eixo transversal/cross-axis), pois assim ele faz efeito. */
+      display: flex; /* O "display: flex" tem que ser sempre no pai. */
+      flex-flow: row nowrap; /* Mesmo sem o digitar, será o default. */
+      justify-content: space-around; /* Mesmo sem o digitar, será o default. */
+      align-items: stretch; /* é o padrão (default). */
+    }
+    
+    div.item { /* É o filho. */
+      background-color: lightskyblue;
+      border: 1px solid black;
+      text-align: center;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+  </div>
+</body>
+</html>
